@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+    <bean id="actes.natureDAO" class="fr.paris.lutece.plugins.actes.business.nature.NatureDAO" />
+    <bean id="actes.matiereDAO" class="fr.paris.lutece.plugins.actes.business.matieres.MatiereDAO" />
+    <bean id="actes.transactionDAO" class="fr.paris.lutece.plugins.actes.business.transaction.TransactionDAO" />
+    <bean id="actes.transmissionService" class="fr.paris.lutece.plugins.actes.modules.s2low.service.S2lowService" />
+</beans>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plug-in>
+    <name>actes</name>
+    <class>fr.paris.lutece.portal.service.plugin.PluginDefaultImplementation</class>
+    <version>2.0.7</version>
+    <description>actes.plugin.description</description>
+    <provider>actes.plugin.provider</provider>
+    <provider-url>http://lutece.paris.fr</provider-url>
+    <icon-url>images/admin/skin/plugins/actes/actes.png</icon-url>
+    <copyright>Copyright (c) 2001-2009 Mairie de Paris</copyright>
+	<core-version-dependency>
+		<min-core-version></min-core-version>
+		<max-core-version></max-core-version>	
+	</core-version-dependency>
+	
+	<!-- if the plugin must have a connection pool with parameter : 1 - yes, 0 - no -->
+    <db-pool-required>1</db-pool-required>
+
+    <admin-features>
+        <admin-feature>
+            <feature-id>ACTES_MANAGEMENT</feature-id>
+            <feature-title>actes.adminFeature.actes_management.name</feature-title>
+            <feature-description>actes.adminFeature.actes_management.description</feature-description>
+            <feature-level>1</feature-level>
+            <feature-url>jsp/admin/plugins/actes/ManageActes.jsp</feature-url>
+        </admin-feature>
+    </admin-features>
+
+</plug-in>

@@ -1,0 +1,78 @@
+--
+-- data for table actes_nature
+--
+
+INSERT INTO actes_nature VALUES (1,'DE','Délibérations');
+INSERT INTO actes_nature VALUES (2,'AR','Arrêtés réglementaires');
+INSERT INTO actes_nature VALUES (3,'AI','Arrêtés individuels');
+INSERT INTO actes_nature VALUES (4,'CC','Contrats et conventions');
+INSERT INTO actes_nature VALUES (5,'BF','Documents budgétaires et financiers');
+INSERT INTO actes_nature VALUES (6,'AU','Autres');
+
+
+INSERT INTO actes_matieres VALUES ('1','COMMANDE PUBLIQUE');
+INSERT INTO actes_matieres VALUES ('1.1','Marchés publics');
+INSERT INTO actes_matieres VALUES ('1.2','Délégations de service public');
+INSERT INTO actes_matieres VALUES ('1.3','Conventions de mandat');
+INSERT INTO actes_matieres VALUES ('1.4','Autres contrats');
+INSERT INTO actes_matieres VALUES ('1.5','Transactions (protocole d''accord transactionnel)');
+INSERT INTO actes_matieres VALUES ('1.6','Maîtrise d''oeuvre');
+INSERT INTO actes_matieres VALUES ('1.7','Actes spéciaux et divers');
+INSERT INTO actes_matieres VALUES ('2','URBANISME');
+INSERT INTO actes_matieres VALUES ('2.1','Documents d''urbanisme');
+INSERT INTO actes_matieres VALUES ('2.2','Actes relatifs au droit d''occupation ou d''utilisation des sols');
+INSERT INTO actes_matieres VALUES ('2.3','Droit de préemption urbain');
+INSERT INTO actes_matieres VALUES ('3','DOMAINE et PATRIMOINE');
+INSERT INTO actes_matieres VALUES ('3.1','Acquisitions');
+INSERT INTO actes_matieres VALUES ('3.2','Aliénations');
+INSERT INTO actes_matieres VALUES ('3.3','Locations');
+INSERT INTO actes_matieres VALUES ('3.4','Limites territoriales');
+INSERT INTO actes_matieres VALUES ('3.5','Actes de gestion du domaine public');
+INSERT INTO actes_matieres VALUES ('3.6','Autres actes de gestion du domaine privé');
+INSERT INTO actes_matieres VALUES ('4','FONCTION PUBLIQUE');
+INSERT INTO actes_matieres VALUES ('4.1','Personnels titulaires et stagiaires de la F.P.T.');
+INSERT INTO actes_matieres VALUES ('4.2','Personnels contractuels');
+INSERT INTO actes_matieres VALUES ('4.3','Fonction publique hospitalière');
+INSERT INTO actes_matieres VALUES ('4.4','Autres catégories de personnels');
+INSERT INTO actes_matieres VALUES ('4.5','Régime indemnitaire');
+INSERT INTO actes_matieres VALUES ('5','INSTITUTIONS et VIE POLITIQUE');
+INSERT INTO actes_matieres VALUES ('5.1','Election exécutif');
+INSERT INTO actes_matieres VALUES ('5.2','Fonctionnement des assemblées');
+INSERT INTO actes_matieres VALUES ('5.3','Désignation de représentants');
+INSERT INTO actes_matieres VALUES ('5.4','Délégation de fonctions');
+INSERT INTO actes_matieres VALUES ('5.5','Délégations de signature');
+INSERT INTO actes_matieres VALUES ('5.6','Exercice des mandats locaux');
+INSERT INTO actes_matieres VALUES ('5.7','Intercommunalité');
+INSERT INTO actes_matieres VALUES ('5.8','Décision d''ester en justice');
+INSERT INTO actes_matieres VALUES ('6','LIBERTES PUBLIQUES et POUVOIRS DE POLICE');
+INSERT INTO actes_matieres VALUES ('6.1','Police municipale');
+INSERT INTO actes_matieres VALUES ('6.2','Pouvoirs du président du conseil général');
+INSERT INTO actes_matieres VALUES ('6.3','Pouvoirs du président du conseil régional');
+INSERT INTO actes_matieres VALUES ('6.4','Autres actes réglementaires');
+INSERT INTO actes_matieres VALUES ('6.5','Actes pris au nom de l''Etat');
+INSERT INTO actes_matieres VALUES ('7','FINANCES LOCALES');
+INSERT INTO actes_matieres VALUES ('7.1','Décisions budgétaires (B.P., D.M., C.A.)');
+INSERT INTO actes_matieres VALUES ('7.2','Fiscalité');
+INSERT INTO actes_matieres VALUES ('7.3','Emprunts');
+INSERT INTO actes_matieres VALUES ('7.4','Interventions économiques');
+INSERT INTO actes_matieres VALUES ('7.5','Subventions');
+INSERT INTO actes_matieres VALUES ('7.6','Contributions budgétaires');
+INSERT INTO actes_matieres VALUES ('7.7','Avances');
+INSERT INTO actes_matieres VALUES ('7.8','Fonds de concours');
+INSERT INTO actes_matieres VALUES ('7.9','Prise de participation (SEM,etc.)');
+INSERT INTO actes_matieres VALUES ('7.10','Divers');
+INSERT INTO actes_matieres VALUES ('8','DOMAINES DE COMPETENCES PAR THEMES');
+INSERT INTO actes_matieres VALUES ('8.1','Enseignement');
+INSERT INTO actes_matieres VALUES ('8.2','Aide sociale');
+INSERT INTO actes_matieres VALUES ('8.3','Voirie');
+INSERT INTO actes_matieres VALUES ('8.4','Aménagement du territoire');
+INSERT INTO actes_matieres VALUES ('8.5','Politique de la ville, habitat, logement');
+INSERT INTO actes_matieres VALUES ('8.6','Emploi, formation professionnelle');
+INSERT INTO actes_matieres VALUES ('8.7','Transports');
+INSERT INTO actes_matieres VALUES ('8.8','Environnement');
+INSERT INTO actes_matieres VALUES ('8.9','Culture');
+INSERT INTO actes_matieres VALUES ('9','AUTRES DOMAINES DE COMPETENCES');
+INSERT INTO actes_matieres VALUES ('9.1','Autres domaines de compétence des communes');
+INSERT INTO actes_matieres VALUES ('9.2','Autres domaines de compétence des départements');
+INSERT INTO actes_matieres VALUES ('9.3','Autres domaines de compétence des régions');
+INSERT INTO actes_matieres VALUES ('9.4','Voeux et motions');

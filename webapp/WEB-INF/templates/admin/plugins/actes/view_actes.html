@@ -1,0 +1,27 @@
+<#assign etat=["Annulé", "Posté", "En attente", "Transmis" ,"Acquité", "Validé", "Refusé" ] />
+<div class="content-box" >
+    
+    <h2>Etat des transmissions au Contrôle de légalité</h2>
+    
+    <table>
+        <tr>
+            <th width="10%">Identifiant</th>
+            <th width="10%">Numéro interne</th>
+            <th width="70%">Objet</th>
+            <th width="10%">Statut</th>
+        </tr>
+        <#list transactions_list as transaction>
+        <tr>
+            <td>${transaction.code}</td>
+            <td><#if transaction.numeroInterne??> ${transaction.numeroInterne} </#if></td>
+            <td><#if transaction.objet??> ${transaction.objet} </#if></td>
+            <td><img src="images/admin/skin/plugins/actes/status${transaction.status}.png" /> ${etat[transaction.status]}</td>
+        </tr>
+        </#list>
+    </table>
+    
+    <form action="jsp/admin/plugins/actes/ViewActes.jsp">       
+        <input type="submit" class="button" value="Rafraichir" />
+    </form>
+    
+</div>

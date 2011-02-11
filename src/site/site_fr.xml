@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Lutece">
+    
+    <version />
+    
+    <body>
+        <menu name="Plugin ACTES">
+            <item name="Introduction" href="index.html"/>
+            <item name="Installation" href="install.html"/>
+        </menu>
+        
+        <menu name="Liens ACTES">
+            <item name="Site Officiel" href="http://www.dgcl.interieur.gouv.fr/Orga_territoriale/Organisation%20territoriale/Control_legal_orga_territ.html" target="_blank" />
+            <item name="Annexe 1 - Normes d'échange" href="http://www.dgcl.interieur.gouv.fr/Orga_territoriale/Cahier%20des%20charges%20-%20Annexe%201%2020051024.pdf" target="_blank" />
+        </menu>	    
+
+        <menu name="Modules de télétransmission">
+            <item name="Module S²low" href="http://lutece.paris.fr/plugins/module-actes-s2low/fr/" target="_blank" />
+        </menu>	    
+        
+        <menu name="Téléchargements" inherit="bottom" >
+			     <item name="Versions stables" href="../../../stable_builds/plugins/plugin-actes/"/>
+			     <item name="Nightly builds" href="../../../nightly_builds/plugins/plugin-actes/" />
+		    </menu>
+        
+        <menu ref="reports" />
+    </body>
+</project>

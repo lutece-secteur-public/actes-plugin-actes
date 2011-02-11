@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <title>Installation</title>
+    </properties>
+    <body>
+        <section name="Installation">
+            <subsection name="Pré-requis">
+                <p>Ce plugin nécessite une version 2.1 ou supérieure du noyau Lutece (lutece-core)</p>
+                <p>Il requiert également un module pour assurer la télétransmission.</p>
+                
+            </subsection>
+            
+            <subsection name="Fabrication et déploiement">
+                <p>
+                    Pour construire la dernière version du plugin suivez les instructions suivantes : 
+                </p>
+                <p>
+                    (NB: Le client Subversion et Maven2 doivent être installés sur votre système)
+                </p>
+   <p>                       
+       <div class="source">
+<pre>
+$ svn export http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/plugin-actes plugin-actes
+$ cd plugin-actes
+$ mvn lutece:assembly
+</pre>
+       </div>
+       </p>
+                <p>
+                    La dernière commande construit un package du plugin sous la forme d'un zip dénommé <code>plugin-actes-xxxx-bin-xxxx.zip</code>
+                    dans le répertoire  <code>./target/assembly</code>
+                </p>
+                <p>
+                    Pour déployer ce package, il suffit simplment de la dézipper dans la racine de votre webapp.
+                    Puis lancer les scripts SQL de création et d'initialisation de la base de données du plugin.
+                </p>
+
+                </subsection>
+
+            
+            <subsection name="Configuration">
+                <p>
+                    1. Avant de lancer la webapp, configurer le module de télétransmission dans le fichier
+                    <code>WEB-INF/conf/plugins/actes_context.xml</code> que l'authentification 
+                    est bien activée comme suit :
+                </p>
+                <p>                       
+       <div class="source">
+<pre>
+&lt;bean id="transmissionService" class="fr.paris.lutece.plugins.actes.modules.s2low.service.S2lowService" /&gt; 
+</pre>
+       </div>
+       </p>
+
+                <p>
+                    2. Activer le plugin par l'interface "Gestion des plugins" du module d'administration et 
+                    définissez le pool de connexion vers la base de données dans laquelle vous avez créé
+                    les tables.
+                </p>
+                <p>
+                    3. Accorder les droits d'utilisation aux utilisateurs du plugin. 
+                </p>
+                </subsection>
+                
+        </section>
+    </body>
+</document>
