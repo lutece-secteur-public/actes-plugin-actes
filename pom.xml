@@ -10,7 +10,7 @@
     <groupId>fr.paris.lutece.plugins</groupId>
     <artifactId>plugin-actes</artifactId>
     <packaging>lutece-plugin</packaging>
-    <version>2.0.10-SNAPSHOT</version>
+    <version>2.0.10</version>
     <name>Lutece actes plugin</name>
     
     <repositories>
@@ -51,8 +51,8 @@
         <jiraComponentId>10090</jiraComponentId>
     </properties>
 	<scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/applications/actes/trunk/plugin-actes</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/applications/actes/trunk/plugin-actes</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/applications/actes/trunk/plugin-actes</url>
+        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/applications/actes/tags/plugin-actes-2.0.10</connection>
+        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/applications/actes/tags/plugin-actes-2.0.10</developerConnection>
+        <url>http://dev.lutece.paris.fr/viewvc/lutece/applications/actes/tags/plugin-actes-2.0.10</url>
     </scm>
 </project>
