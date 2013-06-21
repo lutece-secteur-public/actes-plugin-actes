@@ -7,9 +7,9 @@ function addAttachment() {
 field = document.getElementById("attachments_fields");
 
 input_name = 'fichier_joint_' + field_count;
-html = '<div class="highlight-box"><p><label for="' + input_name + '">Pièce jointe n°' + field_count + ': </label>';
+html = '<div class="highlight-box" ><p><label for="' + input_name + '" class="span3">PiÃ¨ce jointe nÂ°' + field_count + ': </label>';
 html += '<input type="file" name="' + input_name + '" size="60" maxlength="255" /> (fichier au format PDF, JPEG ou PNG)</p>';
-html += '<p><label for="' + input_name + '_signature">Fichier signature numérique : </label>';
+html += '<p><label for="' + input_name + '_signature" class="span3">Fichier signature numÃ©rique : </label>';
 html += '<input type="file" name="' + input_name + '_signature" size="60" maxlength="255" /> (facultatif)</p></div>';
 
 field.innerHTML += html;
@@ -20,53 +20,55 @@ field_count++;
 //]]>
 </script> 
 
-<div class="content-box" >
-    
-    <h2>Création d'une transaction ACTES</h2>
-    
-    <form method="post" action="jsp/admin/plugins/actes/DoCreateActe.jsp" enctype="multipart/form-data">
+<div class="row-fluid" >
+    <fieldset>
+Â Â Â Â <legend>CrÃ©ation d'une transaction ACTES</legend>
+    <form class="form-inline"  method="post" action="jsp/admin/plugins/actes/DoCreateActe.jsp" enctype="multipart/form-data">
         <p>
-            <label for="nature">Nature de l'acte* : </label>
+            <label for="nature" class="span3">Nature de l'acte* : </label>
             <@combo name="nature" default_value="" items=natures_list />
         </p>
         <p>
-            <label for="classification">Classification* : </label>
+            <label for="classification" class="span3">Classification* : </label>
             <@combo name="classification" default_value="" items=matieres_list />
         </p>
         <p>
-            <label for="numero">Numéro de l'acte* : </label>
-            <input type="text" name="numero" maxlength="15"  /> (15 caractères maxi. : chiffres, lettres non
-accentuées et en majuscules, et caractère ‘_’ à l’exclusion de tout autre)
+            <label for="numero" class="span3">NumÃ©ro de l'acte* : </label>
+            <input type="text" name="numero" maxlength="15"  /> (15 caractÃ¨res maxi. : chiffres, lettres non
+accentuÃ©es et en majuscules, et caractÃ¨re ï¿½_ï¿½ Ã  l'exclusion de tout autre)
         </p>
         <p>
-            <label for="date_decision">Date de la décision* : </label>
+            <label for="date_decision" class="span3">Date de la dÃ©cision* : </label>
             <input type="text" name="date_decision" id="date_decision" size="10" />
         </p>
         <p>
-            <label for="objet">Objet* : </label>
-            <textarea name="objet" rows="5" cols="60"  > </textarea> (500 caractères maxi.)
+            <label for="objet" class="span3">Objet* : </label>
+            <textarea name="objet" rows="5" cols="60"  > </textarea> (500 caractÃ¨res maxi.)
         </p>
-        <div class="highlight-box">
-            <p>
-                <label for="fichier_pdf">Fichier contenant l'acte* : </label>
-                <input type="file" name="fichier_pdf" size="60" accept=".pdf" maxlength="255" /> (fichier au format PDF)
-            </p>
-            <p>
-                <label for="fichier_signature">Fichier signature numérique : </label>
-                <input type="file" name="fichier_signature" size="60" maxlength="255" /> (facultatif)
-            </p>
-        </div>
+        <div class="highlight-box" >
+           <p>
+               <label for="fichier_pdf" class="span3">Fichier contenant l'acte* : </label>
+               <input type="file" name="fichier_pdf" size="60" accept=".pdf" maxlength="255" /> (fichier au format PDF)
+           </p>
+           <p>
+               <label for="fichier_signature" class="span3">Fichier signature numÃ©rique : </label>
+               <input type="file" name="fichier_signature" size="60" maxlength="255" /> (facultatif)
+           </p>
+           </div>
         <div id="attachments_fields">
             
         </div>
         <p>
-            <input class="button" type="button" onclick="javascript:addAttachment()" value="Ajouter une pièce jointe" />
+        Â Â Â Â <button class="btn btn-small btn-primary" type="button" onclick="javascript:addAttachment()" >Ajouter une piÃ¨ce jointe</button>
         </p>
         <p>
-            <input type="submit" class="button" value="Transmettre"> 
-            <input class="button" type="button" onclick="javascript:history.go(-1)" value="#i18n{portal.admin.message.buttonCancel}" />
+        	<button class="btn btn-small btn-primary" type="submit" >Transmettre</button>
+        	<button class="btn btn-small" type="button" onclick="javascript:history.go(-1)">
+			    <i class="icon-remove-circle" ></i>
+			    <span class="hidden-phone" >#i18n{portal.admin.message.buttonCancel}</span>
+			</button>
         </p>
     </form>
-    
+   	</fieldset>
 </div>
 <@getDatePicker idField="date_decision" language=locale.language />

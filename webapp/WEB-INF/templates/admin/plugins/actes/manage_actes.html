@@ -1,22 +1,16 @@
-<div class="content-box" >
-    
-    <h2>Gestion des actes à soumettre au Contrôle de légalité</h2>
-    
-    <div class="highlight-box">
-        <h3>Transmettre un acte au Contrôle de légalité</h3>
-        <form action="jsp/admin/plugins/actes/CreateActe.jsp">
-            
-            <input type="submit" class="button" value="Envoyer un acte" />
+<div class="row-fluid" >
+    <fieldset>
+Â Â Â Â <legend>Gestion des actes Ã  soumettre au ContrÃ´le de lÃ©galitÃ©</legend>
+	<div class="well">
+       	<h4>Transmettre un acte au ContrÃ´le de lÃ©galitÃ©</h4>
+        <form  class="form-inline" action="jsp/admin/plugins/actes/CreateActe.jsp">
+        	<button type="submit" class="btn btn-primary btn-small">Envoyer un acte</button>
+        </form>
+	
+        <h4>Voir les actes transmis au ContrÃ´le de lÃ©galitÃ©</h4>
+        <form class="form-inline" action="jsp/admin/plugins/actes/ViewActes.jsp">
+        	<button type="submit" class="btn btn-primary btn-small">Visualiser les transmissions</button>
         </form>
     </div>
-
-    <div class="highlight-box">
-        <h3>Voir les actes transmis au Contrôle de légalité</h3>
-        <form action="jsp/admin/plugins/actes/ViewActes.jsp">
-            
-            <input type="submit" class="button" value="Visualiser les transmissions" />
-        </form>
-    </div>
-    
-    
+	</fieldset>
 </div>

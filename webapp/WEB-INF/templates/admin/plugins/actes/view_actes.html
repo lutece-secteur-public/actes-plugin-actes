@@ -1,12 +1,12 @@
-<#assign etat=["Annulé", "Posté", "En attente", "Transmis" ,"Acquité", "Validé", "Refusé" ] />
-<div class="content-box" >
-    
-    <h2>Etat des transmissions au Contrôle de légalité</h2>
+<#assign etat=["AnnulÃ©", "PostÃ©", "En attente", "Transmis" ,"AcquitÃ©", "ValidÃ©", "RefusÃ©" ] />
+<div class="row-fluid" >
+    <fieldset>
+Â Â Â Â <legend>Etat des transmissions au ContrÃ´le de lÃ©galitÃ©</legend>
     
     <table>
         <tr>
             <th width="10%">Identifiant</th>
-            <th width="10%">Numéro interne</th>
+            <th width="10%">NumÃ©ro interne</th>
             <th width="70%">Objet</th>
             <th width="10%">Statut</th>
         </tr>
@@ -20,8 +20,11 @@
         </#list>
     </table>
     
-    <form action="jsp/admin/plugins/actes/ViewActes.jsp">       
-        <input type="submit" class="button" value="Rafraichir" />
+    <form class="form-inline pull-right" action="jsp/admin/plugins/actes/ViewActes.jsp">       
+        <button class="btn btn-small" type="submit" >
+		    <i class="icon-refresh" ></i>
+		    <span class="hidden-phone" >RafraÃ®chir</span>
+		</button>
     </form>
-    
+    </fieldset>
 </div>
