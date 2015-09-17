@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     
     <parent>
-        <artifactId>lutece-plugins-pom</artifactId>
-        <groupId>fr.paris.lutece.plugins</groupId>
-        <version>2.29</version>
+        <artifactId>lutece-global-pom</artifactId>
+        <groupId>fr.paris.lutece.tools</groupId>
+        <version>3.0.3</version>
     </parent>
     
     <modelVersion>4.0.0</modelVersion>
@@ -46,13 +46,13 @@
     </dependencies>
     
     <properties>
-        <componentName>actes</componentName>
-		<jiraProjectName>LUTECE</jiraProjectName>
-        <jiraComponentId>10090</jiraComponentId>
+        <jiraProjectName>ACTES</jiraProjectName>
     </properties>
-	<scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/applications/actes/trunk/plugin-actes</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/applications/actes/trunk/plugin-actes</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/applications/actes/trunk/plugin-actes</url>
+    
+    <scm>
+        <connection>scm:git:https://github.com/lutece-secteur-public/actes-plugin-actes.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-secteur-public/actes-plugin-actes.git</developerConnection>
+        <url>https://github.com/lutece-secteur-public/actes-plugin-actes.git</url>
     </scm>
+
 </project>
