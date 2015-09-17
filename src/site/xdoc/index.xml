@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <title>Introduction</title>
+    </properties>
+    <body>
+        <section name="Descriptif du plugin ACTES">
+            <subsection name="Introduction">
+                <p>
+                    Ce plugin permet aux collectivités locales de soumettre des actes 
+                    (délibérations, arrêtés, ...) au contrôle de légalité en utilisant un dispositif
+                    de télétransmission et les normes d'échange définies par le MIAT 
+                    (Ministère de l'Intérieur et de l'Aménagement du Territoire).
+                </p> 
+                <p>
+                    Ce plugin ne réalise pas lui-même la télétransmission vers le MIAT. Il fournit une interface
+                    (API) pour créer des modules qui vont s'appuyer sur les API des plates-formes de télétransmission
+                    homologuées par le MIAT. Les échanges entre le plugin et les modules reposent sur les structures
+                    issues du schéma XML de référence du protocole.
+                </p>
+            </subsection>
+            
+            <subsection name="Fonctionnalités du plugin">
+                <p>
+                    Les fonctionnalités proposées par ce plugin sont :
+                </p>
+                <p>
+                    <ul>
+                        <li>Envoi d'un document accompagné éventuellement d'une ou plusieurs pièces jointes</li>
+                        <li>Consultation de l'état des télétransmissions réalisées</li>
+                    </ul>
+                </p>
+            </subsection>
+        </section>
+    </body>
+</document>
