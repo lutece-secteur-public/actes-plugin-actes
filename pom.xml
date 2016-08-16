@@ -10,7 +10,7 @@
     <groupId>fr.paris.lutece.plugins</groupId>
     <artifactId>plugin-actes</artifactId>
     <packaging>lutece-plugin</packaging>
-    <version>3.0.1-SNAPSHOT</version>
+    <version>3.0.1</version>
     <name>Lutece actes plugin</name>
     
     <repositories>
@@ -49,6 +49,7 @@
         <connection>scm:git:https://github.com/lutece-secteur-public/actes-plugin-actes.git</connection>
         <developerConnection>scm:git:https://github.com/lutece-secteur-public/actes-plugin-actes.git</developerConnection>
         <url>https://github.com/lutece-secteur-public/actes-plugin-actes.git</url>
-    </scm>
+      <tag>actes-plugin-actes-3.0.1</tag>
+  </scm>
 
 </project>
